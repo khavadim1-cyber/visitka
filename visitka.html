@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ищу работу/стажировку программистом</title>
+  <style>
+    :root{
+      --bg:#0f1724; /* deep blue */
+      --card:#1E1E1E;
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+      --radius:12px;
+      --maxw:980px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071021 0%, var(--bg) 100%);color:#e6eef6;line-height:1.45}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:20px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .avatar{flex:0 0 120px}
+    .avatar .tenor-gif-embed{width:120px;height:120px;border-radius:16px}
+    h1{margin:0 0 6px;font-size:20px}
+    .role{color:var(--muted);margin-bottom:10px}
+    .chelek{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .chelek .pill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .section{margin-top:12px}
+    .skills{display:flex;gap:8px;flex-wrap:wrap}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+    .proj{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .proj h4{margin:0 0 6px;font-size:15px}
+    .proj p{margin:0;color:var(--muted);font-size:13px}
+    .links{display:flex;gap:10px;align-items:center;margin-top:14px}
+    .btn{background:var(--accent);color:#00202a;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:10px;color:var(--muted);text-decoration:none}
+    .contact{margin-left:auto;display:flex;gap:8px;align-items:center}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media(max-width:720px){
+      .card{flex-direction:column}
+      .avatar{align-self:center}
+      .contact{margin-left:0}
+    }
+    pre{white-space:pre-wrap;background:rgba(0,0,0,0.15);padding:10px;border-radius:8px;color:#dff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="avatar">
+        <div class="tenor-gif-embed" data-postid="4465510619613777157" data-share-method="host" data-aspect-ratio="1.03226" data-width="100%"><a href="https://tenor.com/view/cat-orange-cat-laughing-aaaa-gif-4465510619613777157">Cat Orange Cat GIF</a>from <a href="https://tenor.com/search/cat-gifs">Cat GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      </div>
+      <div class="main">
+        <h1>Vadim Kha — intern Developer</h1>
+        <div class="role">КБТУ · Intern  </div>
+
+        <div class="chelek">
+          <div class="pill">📍 Алматы, Казахстан</div>
+          <div class="pill">💼 1 год опыта в программировании</div>
+          <div class="pill">📧 khavadim1@gmail.com</div>
+          <div class="pill">📞87004412812</div>
+        </div>
+
+        <div class="section">
+          <strong>Навыки</strong>
+          <div class="skills">
+            <div class="skill">JavaScript</div>
+            <div class="skill">C++</div>
+            <div class="skill">html</div>
+            <div class="skill">Python</div>
+            <div class="skill">Telegram bot (aiogram)</div>
+            <div class="skill">oop</div>
+        </div>
+         <div class="section">
+          <strong>Образование</strong>
+          <div class="skills">
+            <div class="skill">Автоматизация и управление</div>
+            <div class="skill">КБТУ</div>
+            <div class="skill">1 Курс</div>
+            <div class="skill">Выпускник курса яндекс лицей</div>
+            <div class="skill">Изучал программирование в школе 2 года</div>
+
+        </div>
+        <div class="section">
+          <strong>Опыт работы</strong>
+          <div class="skills">
+            <div class="skill">Abchess - шахматная школа</div>
+            <div class="skill">Стаж работы 1 год</div>
+        </div>
+        <div class="section">
+
+        <div class="links">
+          <a class="btn" href="#" onclick="downloadtgbot()">Скачать пример кода</a>
+
+          <div class="contact">
+            <a class="btn" href="mailto:khavadim1@gmail.com">Написать на почту</a>
+            <a class="btn" href="https://t.me/KhaVadim">Написать в телеграмм</a>
+          </div>
+        </div>
+
+        <footer>
+          <div>python и библиотека aiogram</div>
+        </footer>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;padding:10px;background:rgba(255,255,255,0.02);border-radius:12px;">
+  <strong>Короткий код‑пример (C++):</strong>
+  <pre style="background:rgba(0,0,0,0.15);padding:10px;border-radius:8px;color:#dff;">
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "" << endl;
+    return 0;
+}
+  </pre>
+</div>
+</div>
+  <script>
+    function downloadtgbot(){
+      const w = window.open('', '_blank');
+      const html = `
+        <html><head><title>CV - Vadim</title></head>
+        <body style="font-family:Inter;color:#222;padding:20px;">
+          <h1>TG bot code example</h1>
+          <p> import asyncio
+import logging<br>
+from aiogram import Bot, Dispatcher, F <br>
+from aiogram.filters import CommandStart<br>
+from aiogram.filters import Command<br>
+from aiogram.types import Message<br>
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton<br>
+from config import TOKEN<br>
+bot = Bot(token=TOKEN)<br>
+dp = Dispatcher()<br>
+kb = ReplyKeyboardMarkup(keyboard=[<br>
+    [KeyboardButton(text='commands')], [KeyboardButton(text='contacts')]<br>
+], resize_keyboard=True)<br>
+<br>
+@dp.message(CommandStart())<br>
+async def cmd_start(message:Message):<br>
+    await message.answer(f"Hi {message.from_user.first_name} 👋 I am Vadim's assistant, I will be glad to help. 🐢", reply_markup=kb)<br>
+<br>
+@dp.message(F.text == 'start')<br>
+async def cmd_start1(message:Message):<br>
+    await message.answer(f"Hi {message.from_user.first_name} 👋 I am Vadim's assistant, I will be glad to help. 🐢", reply_markup=kb)<br>
+<br>
+@dp.message(F.text == 'commands')<br>
+async def command1(message: Message):<br>
+    await message.answer('/Sendphotoid (just send photo and command will start)\n/Sendmem\n/Sendmyname\nweather')<br>
+<br>
+@dp.message(Command('commands'))<br>
+async def command2(message:Message):<br>
+    await message.answer('/Sendphotoid (just send photo and command will start)\n/Sendmem\n/Sendmyname\nweather')<br>
+<br>
+@dp.message(F.text == 'contacts')<br>
+async def cont1(message: Message):<br>
+    await message.answer('mail📩 khavadim1@gmail.com\ntg @KhaVadim\n')<br>
+<br>
+@dp.message(Command('contacts'))<br>
+async def cont2(message: Message):<br>
+    await message.answer('mail📩 khavadim1@gmail.com\ntg @KhaVadim')<br>
+<br>
+<br>
+@dp.message(F.photo)<br>
+async def photo(message:Message):<br>
+    await message.answer(f'ID фото: {message.photo[-1].file_id}')<br>
+<br>
+@dp.message(Command('Sendphotoid'))<br>
+async def cont2(message: Message):<br>
+    await message.answer('just send photo and command will start')<br>
+<br>
+@dp.message(Command('Sendmem'))<br>
+async def mem(message: Message):<br>
+    await message.answer_photo(photo='AgACAgIAAxkBAAMcaNdsu2xHXpFnHsmw-X3DpQJs4qoAAs3vMRuU_cFKsar6hmAT8y0BAAMCAAN5AAM2BA')<br>
+<br>
+@dp.message(Command('Sendmyname'))<br>
+async def id(message: Message):<br>
+    await message.reply(f'your id: {message.from_user.id}\nyour name: {message.from_user.first_name}\nyour surname: {message.from_user.last_name} ')<br>
+<br>
+@dp.message(Command('weather'))<br>
+async def weather(message: Message):<br>
+    await message.reply('in development')<br>
+<br>
+async def main():<br>
+    await dp.start_polling(bot)<br>
+<br>
+if __name__ == '__main__':<br>
+    logging.basicConfig(level=logging.INFO)<br>
+    try:<br>
+        asyncio.run(main())<br>
+    except KeyboardInterrupt:<br>
+        print('Stop')</p><br>
+        </body></html>`;
+      w.document.write(html);
+      w.document.close();
+    }
+  </script>
+</body>
+</html>
